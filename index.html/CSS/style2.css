@@ -1,0 +1,13 @@
+h1{
+    color: red;
+}
+
+p{
+    /*color:yellow;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+
+    color:blue ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  13px;
+}

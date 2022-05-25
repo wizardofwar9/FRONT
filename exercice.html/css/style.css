@@ -1,0 +1,61 @@
+body {
+  background: #eaeaea url('/images/body\ \(1\).png'); /* (grille grise et blanche) */
+    margin: 20px 30px; /* Donner plus de marge à gauche et à droite, et moins en haut et en bas */
+    font-family: sans-serif; /* Police moderne, sans empattements, du type Times New Roman */
+  }
+
+  #entete {
+    background: #9f9f9f url('/images/entete.png'); /* (grosse barre grise) */
+    border: 1px solid black; /* Une bordure noire de 1 pixel sur tous les côtés, sauf... */
+    border-bottom: none; /* ... en bas, pour ne pas faire double-emploi avec la bordure du haut de #page */
+  }
+  h1 {
+    height: 58px; /* La hauteur de l'image de fond entete.png (grosse barre grise) */
+    line-height: 58px; /* Centrer le texte sur toute la hauteur de l'image de fond */
+    border-bottom: 1px solid black; /* L'entête est composé de deux parties : h1 et #menu, il faut donc les séparer */
+    margin: 0; /* Par défaut les navigateurs assignent une marge aux titres. Ici on gère notre propre mise en page */
+    text-align: center; /* Centrer le texte horizontalement sur toute la largeur de la page */
+    /* Technique de substitution du texte par une image : */
+    background: url('/images/h1.png') 50% 50% no-repeat; /* Cette jolie image, unique et centrée, remplace le texte ennuyeux */
+    text-indent: -32000px; /* On décale le titre autant que possible sur la gauche de l'écran, pour ne plus le voir */
+  }
+
+#menu {
+  background: black url('/images/menu.png'); /* (barre noire, avec un bandeau à rayures noir et orange juste en dessous) */
+  list-style: none; /* On ne veut plus que les lignes de la liste aient de puces */
+  margin: 0; /* Aucune marge au dessus et en dessous de la liste (les listes étant normalement utilisées entre des paragraphes) */
+  padding: 0; /* Aucune indentation des éléments contenus dans la liste (généralement, les listes ont un padding à gauche) */
+  height: 29px; /* Hauteur de l'image menu.png */
+}
+#menu li {
+  float: left; /* Afin que chaque élément de la liste se positionne juste à droite de l'élément précédent, et non en dessous */
+  margin: 0 2px; /* Espacer horizontalement chaque bouton à l'intérieur du menu */
+}
+#menu a {
+  display: block; /* Afin de pouvoir assigner une hauteur au lien (la hauteur étant définir dans la règle "#menu span") */
+  text-decoration: none; /* Pas de soulignement des liens dans le menu, ils sont déjà identifiables en tant que liens par le visiteur */
+  color: #ffb400; /* Le texte est orange */
+  background: url('/images/sous-menu-lien.png'); /* Bande noir, mais devenant orange lorsque décalée vers le haut */
+  cursor: pointer; /* Curseur en forme de main, pour résoudre un bug sous IE, causé lors du changement du lien en affichage bloc, quelques lignes plus haut */
+}
+#menu span { /* Ce span permet au menu survolé d'avoir un reflet de lumière sur sa droite */
+  display: block; /* Afin de pouvoir assigner une hauteur à cet élément (voir ci-dessous) */
+  height: 21px; /* Hauteur de l'image menu-lien.png, divisé par 2 */
+  line-height: 21px; /* Centrer le texte verticalement sur la barre noire */
+  padding: 0 10px; /* Espacement intérieur du bouton à gauche et à droite, pour plus d'aération */
+  background: url('/images/menu-lien-droite.png') 100% 0 no-repeat; /* Une seule occurrence de l'image de fond, et aligné tout à droite */
+}
+#menu a:hover, /* Au survol de la souris */
+#menu a:focus, /* Lorsque le lien a le focus, sous Firefox et autres navigateurs */
+#menu a:active /* Lorsque le lien a le focus, sous Internet Explorer */
+{
+  color: black; /* Le fond devient orange, donc le texte doit être noir pour être visible */
+  background-color: #ffb400; /* L'image de fond reste inchangée, mais si l'image n'a pas été chargée, s'assurer qu'il y ait un effet visible */
+  background-position: 0 -21px; /* =42 (la hauteur de l'image) / 2 : remonte l'image de fond de moitié vers le haut pour révéler sa partie orange */
+}
+#menu a:hover span, /* Au survol de la souris */
+#menu a:focus span, /* Lorsque le lien a le focus, sous Firefox et autres navigateurs */
+#menu a:active span /* Lorsque le lien a le focus, sous Internet Explorer */
+{
+  background-position: 100% -21px; /* =42 (la hauteur de l'image) / 2 ; mais toujours aligné à droite */
+}

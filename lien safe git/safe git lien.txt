@@ -1,0 +1,10 @@
+git remote add origin https://github.com/wizardofwar9/html-lesbases.git
+
+
+STA6401265+afpa@STA6401265 MINGW64 ~/Desktop
+$ git config --global user.name "Clarté stéphane"
+
+STA6401265+afpa@STA6401265 MINGW64 ~/Desktop
+$ git config --global user.email "wizardofwar9@gmail.com"
+
+STA6401265+afpa@STA6401265 MINGW64 ~/Desktop
