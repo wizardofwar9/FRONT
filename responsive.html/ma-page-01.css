@@ -1,0 +1,125 @@
+.container {
+    width: 850px;
+    height: 1100px;
+    font-size: xx-large;
+}
+
+.box01 {
+    float: left;
+    color: rgb(0, 238, 255);
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+    
+
+}
+
+
+.box02 {
+    float: right;
+    color: rgb(53, 28, 194);
+    width: 650px;
+    height: 100px;
+    background-color: pink;
+    text-align: center;
+    font-size: 80px
+}
+
+.box03 {
+    float: right;
+    color: blue;
+    width: 650px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.box04 {
+    color: blue;
+    width: 850px;
+    height: 300px;
+    background-color: white;
+}
+
+.box05 {
+    float: left;
+    color: blue;
+    width: 650px;
+    height: 500px;
+    background-color: rgb(28, 156, 156);
+}
+
+.box06 {
+    float: right;
+
+    color: blue;
+    width: 200px;
+    height: 500px;
+    background-color: rgb(255, 0, 85);
+}
+
+.box07 {
+    float: left;
+    color: black;
+    width: 850px;
+    height: 300px;
+    background-color: green;
+}
+
+@media only screen  and (min-width: 800px) and (max-width: 1000px){
+    .container{ 
+        width: 100%;
+    }
+    /*for mobile phones:*/
+    .box04 {
+        color: red;
+        width: 850px;
+        height: 300px;
+        background-color: rgb(28, 226, 21);
+    }
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px)  {
+    .container{ 
+        width: 100%;
+    }
+    /*for tablet*/
+ 
+    .box04 {
+        color: blue;
+        width: 850px;
+        height: 300px;
+        background-color: rgb(189, 31, 31);
+    }
+
+}
+
+@media only screen and (max-width: 500px)   {
+    .container{ 
+        width: 100%;
+    }
+   
+
+    
+   .box01,
+   .box02,
+   .box03,
+   .box04,
+   .box05,
+   .box06,
+   .box07 
+                      { 
+                width: 100%;
+            }
+         
+          
+            
+
+            }
+        
+
+    
+
+
