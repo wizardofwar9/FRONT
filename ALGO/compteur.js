@@ -1,8 +1,8 @@
 
 
 document.write("Fiche de presence:</br>");
-document.write("Pour les présents tapez ok</br>");
-document.write("sinon pour les absents Annuler</br>");
+document.write("Pour les présents tapez ok:</br>");
+document.write("sinon pour les absents Annuler:</br>");
 document.write("</br></br>");
 document.write("</br></br>");
 
