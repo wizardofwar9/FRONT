@@ -1,0 +1,23 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.header{
+    display: grid;
+   grid-template-columns: 30% 70%;
+}
+.box01{
+    background-color: aqua;
+    
+}
+.box02 {
+   background-color: blueviolet;
+   text-align: center;
+
+}
+.inline{
+    display: inline;
+    
+}

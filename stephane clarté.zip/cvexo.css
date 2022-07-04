@@ -1,88 +1,82 @@
-
-.container {
-        width: 1920px;
-    height: 1080px;
+.container1 {
+    width: 100%;
+    height: auto;
 }
 
-.box01
-{
-float: left;
-height: 10%;
-width: 30%;
-background-color:lightgray
-}
-.box02
- { 
-   
-    float: right;
-   
-    background-color:blue
-    color:azure
-}
-.box03
- {
-    float: left;
-    height: 90%;
-    width: 40%;
-    
-    
+.box01 {
+    height: 100%;
+    width: 30%;
+    background-color: lightgray;
 }
 
-.box04 
-{
-    float: left;
+.box02 {
 
-background-color:blueviolet
-}
-
-.box05
-{
     float: right;
 
-background-color:goldenrod
+    background-color: blue;
+    color: azure
+}
+.container2{
+    width: 100%;
+    height:auto;
+}
+.box03 {
+    float:left;
+    height: auto;
 
+}
+
+.box04 {
+
+    background-color: blueviolet
+}
+
+.box05 {
+    float: right;
+    height: 500px;
+
+
+    background-color: goldenrod
 }
 
 
 
- @media only screen  and (min-width: 800px) and (max-width: 1000px){ 
-     .container{  
-         width: 100%; 
-     } 
-     /*for pc */
- } 
-    
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
 
- @media only screen and (min-width: 500px) and (max-width: 800px)  { 
-     .container{  
-         width: 100%; 
-     } 
-     /*for tablet */
- } 
- 
-   
+    /*for pc */
+}
 
- @media only screen and (max-width: 500px)   { 
-     .container{  
-         width: 100%; 
-     } 
-   /* for mobile */
 
-    
-    .box01, 
-    .box02, 
-    .box03, 
-    .box04, 
-    .box05 
-   
-    
-                       {  
-                 width: 100%; 
-             } 
-         
-          
-            
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
 
-            } 
-            
-            
+    /*for tablet */
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    /* for mobile */
+
+
+    .box01,
+    .box02,
+    .box03,
+    .box04,
+    .box05 {
+        width: 100%;
+    }
+
+
+
+
+}
