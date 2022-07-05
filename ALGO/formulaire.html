@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/ALGO/formulaire.css">
+</head>
+
+<body>
+
+  <div class="box08">
+
+    <h2>Formulaire de contact</h2>
+    <form action="#">
+      <p><i>Complétez le formulaire. Les champs marqués par </i><em>*</em> sont <em>obligatoires</em></p>
+      <fieldset>
+        <legend>Contact</legend>
+        <label for="nom">Nom <em>*</em></label>
+        <!---placeholder: indication grisée 
+      //required: il faut renseigner le champ sinon la validation est bloquée
+      //autofocus: le curseur est positionné dans cette case au chargement de la page--->
+        <input id="nom" placeholder="Marc Dupond" autofocus="" required=""><br>
+        <label for="telephone">Portable</label>
+        <!---// type="tel": bascule le clavier sur un smartphone
+      // pattern: expression régulière à vérifier pour pouvoir valider--->
+        <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
+        <label for="email">Email <em>*</em></label>
+        <input id="email" type="email" placeholder="prenom.nom@developpeurweb.com" required=""
+          pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"><br>
+      </fieldset>
+      <fieldset>
+        <legend>Information personnelles</legend>
+        <label for="age">Age<em>*</em></label>
+        <!---// type="number": bascule le clavier sur un smartphone--->
+        <input id="age" type="number" placeholder="xx" pattern="[0-9]{2}" required=""><br>
+        <label for="sexe">Sexe</label>
+        <select id="sexe">
+          <option value="F" name="sexe">Femme</option>
+          <option value="H" name="sexe">Homme</option>
+        </select><br>
+        <label for="comments">Pourquoi voulez-vous me contacter ?</label>
+        <textarea id="comments"></textarea>
+      </fieldset>
+
+
+      <p><input type="submit" value="Soummettre"></p>
+    </form>
+  </div>
+
+</body>
+
+</html>
