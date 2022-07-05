@@ -49,11 +49,12 @@ body {
 }
 
 .footer {
-    border: solid 1px cyan ;
+    border: solid 1px rgb(10, 213, 58) ;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: span 6;
+    grid-column-end: span 3;
+    border-radius: 20px;
 }
 .aside{
     text-align: center;
