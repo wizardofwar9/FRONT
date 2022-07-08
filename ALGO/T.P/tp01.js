@@ -2,7 +2,7 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;/*taille de la balle*/
-var x = canvas.width/2;
+var x = canvas.width/2;/* definition de lorigine*/
 var y = canvas.height-30;
 var dx = 2;/*direction en horizontal*/
 var dy = -2;/*direction en vertical*/
@@ -164,5 +164,43 @@ function draw() {
   y += dy;
   requestAnimationFrame(draw);
 }
-
+// BALL AND WALL COLLISION DETECTION
+function ballWallCollision(){
+  if(ball.x + ball.radius > cvs.width || ball.x - ball.radius < 0){
+      ball.dx = - ball.dx;
+      WALL_HIT.play();
+  }
+  
+  if(ball.y - ball.radius < 0){
+      ball.dy = -ball.dy;
+      WALL_HIT.play();
+  }
+  
+  if(ball.y + ball.radius > cvs.height){
+      LIFE--; // LOSE LIFE
+      LIFE_LOST.play();
+      resetBall();
+  }
+}
+// BALL AND PADDLE COLLISION
+function ballPaddleCollision(){
+  if(ball.x < paddle.x + paddle.width && ball.x > paddle.x && paddle.y < paddle.y + paddle.height && ball.y > paddle.y){
+      
+      // PLAY SOUND
+      PADDLE_HIT.play();
+      
+      // CHECK WHERE THE BALL HIT THE PADDLE
+      let collidePoint = ball.x - (paddle.x + paddle.width/2);
+      
+      // NORMALIZE THE VALUES
+      collidePoint = collidePoint / (paddle.width/2);
+      
+      // CALCULATE THE ANGLE OF THE BALL
+      let angle = collidePoint * Math.PI/3;
+          
+          
+      ball.dx = ball.speed * Math.sin(angle);
+      ball.dy = - ball.speed * Math.cos(angle);
+  }
+}
 draw();
