@@ -57,7 +57,7 @@ for (let i = 0; i < MonTableau.length; i++) {
         }
         }
     
-    document.getElementById("result").innerHTML=("pas das la liste");
+    document.getElementById("result").innerHTML=("pas dans la liste");
     
       }      
 
