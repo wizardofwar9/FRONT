@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire!</title>
+<style>
+    label{
+        display:inline-block;
+        min-width:200px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Les formulaires</h1>
+    <form method='post' action='traitement.php'>
+        <label for='prenom'>Entrez votre prenom:</label>
+            <input type='text' name="prenom"id='prenom' required='required' maxlength='20'>
+<span id='prenom_manquant'></span></br>
+
+
+ <label for='mail'>Entrez votre mail:</label>
+ <input type='email' name="mail"id='mail'required='required'></br>
+
+<label for='tel'>Entrez votre telephone:</label>
+<input type='tel' name="tel"id='tel'required='required'></br>
+
+
+<input type='submit' value='validez' id='bouton_envoi'>
+    </form>
+  <script>
+    var validation = document.getElementById('bouton_envoi');
+    var prenom = document.getElementById('prenom');
+    var prenom_m = document.getElementById('prenom_manquant');
+      var prenom_v  = /^[a-zA-ZèéîïÊÈÉÏÎ][a-zèéêçîï]+([-'\s]a-zA-ZèéîïÊÈÉÏÎ][a-zèéêçîï]+)?/;
+   //dans lez cas d un 2 eme prenom ou prenom composé ?= facultatif.   \s=considere un espace
+      validation.addEventListener('click',f_valid);
+
+    function f_valid(e){
+if (prenom.validity.valueMissing) {
+    e.preventDefault();
+    prenom_m.textContent = 'prenom_manquant';
+    prenom_m.style.color ='red';
+  
+}
+     else if (prenom_v.test(prenom.value) == false){
+        event.preventDefault();
+        prenom_m.textContent = 'Format incorrect';
+        prenom_m.style.color = 'orange';
+     }else{
+        
+     }
+     }
+  </script>
+</body>
+</html>
