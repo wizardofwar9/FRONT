@@ -1,0 +1,49 @@
+.parent01{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: black;
+    
+}
+.parent02{
+    background-color: rgb(167, 240, 194);
+    height: 100px;
+    grid-template-columns: 30% 30% 40%;
+}
+
+header{
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+ul :hover{
+    background-color: cornsilk;
+    color:blue
+}
+
+
+.child01{
+        width: 150px;
+background-color: aqua;
+}
+.child02{
+    font-style: italic;
+    border: solid 2px crimson;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+.child03{
+    color: blueviolet;
+    border: solid 2px rgb(118, 10, 212);
+    text-align: center;
+    
+    }
+    

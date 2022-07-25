@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Engagez vous qu'ils disaient, rengagez vous qu'ils disaient !</p>
+        <p id ="reg"></p>
+      <script>  
+      //objet string
+        //var expr = document.querySelector('p');
+    
+        //
+      //  var r1 = /engagez/i;
+        //var r2 = /engagez/ig;
+//
+  //      var res1 = expr.textContent.match(r1);
+    //    var res2 = expr.textContent.match(r2);
+   //
+   //var r1 = /vous/i;
+   //var r2 = /vous/g;
+
+   //var res1 = expr.textContent.replace(r1, 'moi');
+   //var res2 = expr.textContent.replace(r2, 'moi');
+
+
+       // var resultat = document.getElementById('reg');
+       // resultat.innerHTML = 'Résultat match() sur regex 1 :' + res1 +
+        //'<br>Résultat match() sur regex 2 : '+ res2;
+    
+var rec = document.querySelector('p').textContent;
+
+var r1 = /ENGAGEZ/;
+var r2 = /ENGAGEZ/i;
+
+var res1 = r1.test(rec);
+var res2 = r2.test(rec);
+//si la method etait exec sur r1 aient la reponse serait aient car elle est ds le texte
+
+var resultat = document.getElementById('reg');
+resultat.innerHTML = 'resultat 1 : ' + res1 +
+'<br>resultat 2 : ' +res2;
+
+//afficher les quantifieurs des regex pour des recherches affinées
+//exemple /10+/ recherchera tous les 1 suivsi d'au mloins un 0.
+
+//recherche avec une classe exemple var r1 = /[abf]/g
+//recherchera tous les a ,les b  etles f dans le text.
+ //recherche avec interval 
+ //var res 1 =/[a-zA-Z0-9]/g;     recherchera tous les intervals en Global.
+ //
+ //var res1 =/\[regex\]/g;    recherchera le mot regex et les crochets les antislash servant
+ //a capter les crochets ceux ci etants des caracteres speciaux.
+
+//var res4 = /\?$/;  recherchera le caractere special ? et $ pour dire en fin de chaîne.
+//Voir metacaractere 
+//exemple \W  trouve tout ce qui n'est pas un caractere...
+    </script>
+</body>
+</html>
