@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box {
+        width: 400px;
+        height: 200px;
+        border: 2px solid darkblue;
+        background-color: rgb(190, 129, 48);
+        color: white;
+        font: 16px "Zilla", "Open Sans", "Helvetica", "Arial", sans-serif;
+      }
+      </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+          Move the mouse around in this Page to watch its coordinates change.
+        </p>
+        <p>Bougez la souris sur la page pour en voir les coordonées en X et Y.</p>
+        <p>
+          <code>pageX</code>: <span id="x">n/a</span>
+        </p>
+        <p>
+          <code>pageY</code>: <span id="y">n/a</span>
+        </p>
+      </div>
+      <script>const box = document.querySelector("html");
+        const pageX = document.getElementById("x");
+        const pageY = document.getElementById("y");
+        
+        function updateDisplay(event) {
+          pageX.innerText = event.pageX;
+          pageY.innerText = event.pageY;
+        }
+        
+        box.addEventListener("mousemove", updateDisplay, false);
+        box.addEventListener("mouseenter", updateDisplay, false);
+        box.addEventListener("mouseleave", updateDisplay, false);
+        </script>
+        <script src="/ALGO/mouse.js"></script>
+</body>
+</html>

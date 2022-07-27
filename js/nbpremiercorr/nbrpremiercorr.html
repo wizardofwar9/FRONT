@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nbre premier</title>
+<script>
+var n = new Number,
+estPrem = new Boolean(true);
+
+ function tester() {
+n = Number(document.test.nbre.value);
+estPrem = true;
+for (j = 2; j < n; j++) {
+ if (n % j == 0) estPrem = false;
+ }
+document.test.rep.value = estPrem;
+ }
+</script>
+</head>
+
+
+<body> 
+ <dd>Avec 19 toute les divisions de 2 à 18 ont un reste non nul; 19 est premier. 
+
+ <p> 
+</p> 
+ <form name="test"> 
+ <dd>Mettez votre nombre : &nbsp; <input type="text" name="nbre" value="21" size="3"> 
+ <input type="button" value="Tester" onclick="tester()"> 
+ Resultat : <input type="text" name="rep" size="5"> 
+ <i>(ne fonctionne pas avec 1)</i> 
+ </dd></form> 
+ <b>Algorithme : </b> 
+</dd> 
+<script src="/js/nbrpremiercorr.js">
+    
+</script>
+</body> 
+
+</html>
+

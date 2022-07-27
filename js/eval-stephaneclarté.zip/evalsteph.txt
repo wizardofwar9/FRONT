@@ -1,0 +1,6 @@
+css 5
+javascript 7
+boostrap 4
+html 6
+jquery 0
+git 7

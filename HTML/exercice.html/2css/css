@@ -1,0 +1,17 @@
+body {
+  background: #eaeaea url('images/body.png'); /* (grille grise et blanche) */
+  margin: 20px 30px; /* Donner plus de marge à gauche et à droite, et moins en haut et en bas */
+  font-family: sans-serif; /* Police moderne, sans empattements, du type Times New Roman */
+}
+#entete {
+    background: #9f9f9f url('images/entete.png'); /* (grosse barre grise) */
+    border: 1px solid black; /* Une bordure noire de 1 pixel sur tous les côtés, sauf... */
+    border-bottom: none; /* ... en bas, pour ne pas faire double-emploi avec la bordure du haut de #page */
+  }
+  h1 {
+    height: 58px; /* La hauteur de entete.png (grosse barre grise) */
+    line-height: 58px; /* Centrer le texte sur toute la hauteur de l'image de fond */
+    border-bottom: 1px solid black; /* L'entête est composé de deux parties : h1 et #menu, il faut donc les séparer */
+    margin: 0; /* Par défaut les navigateurs assignent une marge aux titres. Ici on gère notre propre mise en page */
+    text-align: center; /* Centrer le texte horizontalement sur toute la largeur de la page */
+    

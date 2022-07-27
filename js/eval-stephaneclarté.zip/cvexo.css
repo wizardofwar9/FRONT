@@ -1,0 +1,88 @@
+.container {
+        width: 1920px;
+    height: 1080px;
+}
+
+.box01
+{
+float: left;
+height: 50px;
+width: 30%;
+background-color:lightgray
+}
+.box02
+ { 
+    float: right;
+    height: 50px;
+    width: 70%;
+    background-color:blue
+}
+.box03
+ {
+    float: left;
+    height: 500px;
+    width: 30%;
+    background-color:
+    
+}
+
+.box04 
+{
+    float: left;
+height: 500px;
+width: 30%;
+background-color:blueviolet
+}
+
+.box05
+{
+    float: right;
+height: 500px;
+width: 30%;
+background-color:goldenrod
+
+}
+
+body{width: 100%;} 
+
+ @media only screen  and (min-width: 800px) and (max-width: 1000px){ 
+     .container{  
+         width: 100%; 
+     } 
+     for pc 
+ } 
+    
+
+ @media only screen and (min-width: 500px) and (max-width: 800px)  { 
+     .container{  
+         width: 100%; 
+     } 
+     for tablet 
+ } 
+ 
+   
+
+ @media only screen and (max-width: 500px)   { 
+     .container{  
+         width: 100%; 
+     } 
+    for mobile 
+
+    
+    .box01, 
+    .box02, 
+    .box03, 
+    .box04, 
+    .box05 
+   
+    
+                       {  
+                 width: 100%; 
+             } 
+         
+          
+            
+
+            } 
+            
+            
