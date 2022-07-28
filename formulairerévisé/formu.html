@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK rel="stylesheet" type="text/css" href="/FRONT/formulairerévisé/formu.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Formulaire d'inscription</h2>
+  <form name="RegForm" action="/submit.php" onsubmit="return W3docs()" method="post" class="w3docs">
+    <div>
+      <label for="Nom">Nom:</label>
+      <input type="text" id="Nom" size="60" name="Nom" />
+    </div>
+    <br />
+    <div>
+      <label for="adresse">Adresse:</label>
+      <input type="text" id="adresse" size="60" name="Adresse" />
+    </div>
+    <br />
+    <div>
+      <label for="E-mail" l>Adresse électronique:</label>
+      <input type="text" id="E-mail" size="60" name="Email" />
+    </div>
+    <br />
+    <div>
+      <label for="Mot de passe">Mot de passe:</label>
+      <input type="text" id="Mot de passe" size="60" name="Mot de passe" />
+    </div>
+    <br />
+    <div>
+      <label for="Téléphone">Téléphone: </label>
+      <input type="text" id="Téléphone" size="60" name="Téléphone" />
+    </div>
+    <br />
+    <div>
+      <label>Sélectionnez le Livre</label>
+      <select type="text" value="" name="Sujet">
+        <option></option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>PHP</option>
+        <option>JavaScript</option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="commentaire">Commentaires: </label>
+      <textarea cols="62" id="commentaire" rows="10" name="Commentaire"></textarea>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Envoyer" name="Envoyer" />
+      <input type="reset" value="Rénit" name="Reset" />
+    </div>
+  </form>
+    <script type="text/javascript" src="/FRONT/formulairerévisé/formu.js"></script>
+</body>
+</html>
