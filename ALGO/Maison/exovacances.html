@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*    var i =0
+while(i < 11) {
+console.log(i) 
+    if (i > 5) {
+        break
+    }
+i = i+1
+}
+for(var j = 0; j < 11; j++) {
+    console.log(j)
+}*/
+/*var eleves = ['jean','robert','cynthia','antoine']
+
+for (var i = 0; i< eleves.length; i++) {
+    console.log('Bonjour ' + eleves[i])
+}
+//console.log('Bonjour ' + eleves[1])
+// pour decremanter et afficher le tableau de droite  a gauche
+for (var i = eleves.length -1; i>= 0; i--) {
+    var  eleve = eleves[i]
+    document.write('salut ' + eleve)
+}*/
+/*
+var steph = {
+    crier: function() {
+        console.log('STEPH')
+    }
+}*/
+/*erreur ce me donne les lettres et le nombre de fois ou elles apparraissent
+*/
+var phrase = "Le premier petit lapin qui sortira prendra un coup de fusil le petit lapin sera mort"
+
+var frequence = function(phrase){
+    var mots = phrase.toLowerCase().split("") /*eureka!*/
+    var compteur = {}
+    for (var i=0;i< mots.length; i++) {
+    var mot = mots[i]
+    if (compteur[mot]=== undefined){
+    compteur[mot]=1
+    } else {
+        compteur[mot]++
+            }
+        }
+        return compteur
+    }
+
+    var eleve1 = {
+        nom: 'steph',
+        notes: [15, 16, 18, 5]
+    }
+    var eleve2 = {
+        nom: 'edith',
+        notes: [5, 18, 20, 18]
+    }
+
+    var moyenne = function(notes){
+    var somme =  0
+    for (var i = 0; i< notes.length;i++){
+        somme = somme + notes[i]
+    }
+    return somme / notes.length
+ }
+
+ var estMeilleur = function(a, b){
+    return moyenne(a.notes) > moyenne(b.notes)
+ }
+ console.log(estMeilleur(eleve1, eleve2))
+    //estmeilleur(eleve1, eleve2)
+      /* ceci prends les mots l' espace ds le split("")(" ")change lettre ou mot  
+var phrase = "il existe des mots et des codes qui seront alloués a ta maison de victoire demain"
+ var mots = phrase.split(" ")
+ console.log(mots)*/
+    </script>
+</body>
+</html>
