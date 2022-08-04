@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <?php
+print("<SCRIPT language=javascript>");
+print(" var ladate=new Date();");
+print(" ladate.setHours(".date("H").");");
+print(" ladate.setMinutes(".date("i").");");
+print(" ladate.setSeconds(".date("s").");");
+print(" function AfficheHeure() {");
+print(" ladate.setSeconds(ladate.getSeconds()+1);");
+print(" window.status='Il est exactement : '+ladate.getHours()+':'+ladate.getMinutes()+':'+ladate.getSeconds();");
+print(" setTimeout('AfficheHeure()',1000);");
+print(" }");
+print(" AfficheHeure();");
+print("</SCRIPT>");
+?>-->
+<form name="monform" action="traiter.php" method="post" target="_blank">
+    <p>Zone de texte : <input type="text" name="champtexte"></p>
+    <p>Liste déroulante : 
+    <select name="liste">
+      <option value="1">Choix 1</option>
+      <option value="2">Choix 2</option>
+      <option value="3">Choix 3</option>
+      <option value="4">Choix 4</option>
+    </select>
+    </p>
+    <p>Choix multiples : 
+    <input type="radio" name="niveau" value="0" checked> Débutant 
+    <input type="radio" name="niveau" value="1"> Intermédiaire
+    <input type="radio" name="niveau" value="2"> Bon 
+    <input type="radio" name="niveau" value="3"> Jedi 
+    </p>  
+    <p>Cases à cocher : <input type="checkbox" name="accord" value="ok"> Je suis d'accord</p>
+   <p><input type="submit" value="Envoyer"></p>
+  </form>
+</body>
+</html>
+
+
+
+
+
