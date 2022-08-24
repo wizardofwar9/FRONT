@@ -12,11 +12,11 @@ const About = () => {
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         quia culpa beatae deleniti dignissimos veniam debitis veritatis
-        temporibus, repellendus nihil ea omnis cum hic praesentium quisquam ad
+        temporibus, repellendus nihil ea omnis zob cum hic praesentium quisquam ad
         fugiat! Labore ipsa perspiciatis, aut esse odio repellendus distinctio
         doloremque sint provident doloribus blanditiis, quaerat rerum. Facere
         harum in ratione eos, minima blanditiis dicta ad minus quos temporibus
-        adipisci excepturi ab exercitationem iure esse enim, natus repellat
+        adipisci excepturi ab exercitationem zob iure esse enim, natus repellat
         error reiciendis iusto. Dicta quibusdam, ipsum enim doloribus veritatis
         officia voluptas, similique in veniam sed possimus? Magnam voluptates
         reiciendis, non ipsum, fugiat minus quasi architecto deleniti voluptate
