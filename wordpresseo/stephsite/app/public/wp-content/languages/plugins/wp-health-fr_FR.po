@@ -1,0 +1,224 @@
+# Translation of Plugins - Manage Backup &amp; Monitor &#8211; WP Umbrella WordPress Monitoring &amp; Automatic Backups - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Manage Backup &amp; Monitor &#8211; WP Umbrella WordPress Monitoring &amp; Automatic Backups - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-20 10:35:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Manage Backup &amp; Monitor &#8211; WP Umbrella WordPress Monitoring &amp; Automatic Backups - Stable (latest release)\n"
+
+#: src/Actions/Admin/Ajax/TryUpdatePlugin.php:54
+msgid "Invalid request."
+msgstr "Requête invalide."
+
+#: src/Actions/Admin/Ajax/TryUpdatePlugin.php:41
+msgid "Admin request nonce check failed"
+msgstr "Échec de la vérification du nonce de la requête Admin"
+
+#: src/Actions/Admin/Ajax/TryUpdatePlugin.php:31
+msgid "Required parameters are missing"
+msgstr "Des paramètres obligatoires sont manquants"
+
+#: src/Services/WhiteLabel.php:33
+msgid "Helping Agencies and Freelancers with their WordPress Maintenance Business 🚀"
+msgstr "Aider les agences et les freelances dans leur activité de maintenance WordPress 🚀"
+
+#: src/Services/Manage/ManagePlugin.php:56
+#: src/Services/Manage/ManagePlugin.php:176
+msgid "Plugin %s not exist"
+msgstr "L’extension %s n’existe pas"
+
+#: src/Actions/Admin/PrepareErrorHandler.php:88
+msgid "An error occurred while trying to create a mu-plugin. Your host seems to restrict write permissions. Please contact: support@wp-umbrella.com"
+msgstr "Une erreur s’est produite lors de la tentative de création d’un extension indispensable. Votre hébergeur semble restreindre les droits d’écriture. Veuillez contacter : support@wp-umbrella.com"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php:14
+msgid "Action Group"
+msgstr "Groupe d’action"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:42
+msgid "No actions found in trash"
+msgstr "Aucune action trouvée dans la corbeille"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:41
+msgid "No actions found"
+msgstr "Aucune action trouvée"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:40
+msgid "Search Scheduled Actions"
+msgstr "Rechercher des actions planifiées"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:38
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:39
+msgid "View Action"
+msgstr "Voir l’action"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:37
+msgid "New Scheduled Action"
+msgstr "Nouvelle action planifiée"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:36
+msgid "Edit Scheduled Action"
+msgstr "Modifier l’action planifiée"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:35
+msgid "Edit"
+msgstr "Modifier"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:34
+msgid "Add New Scheduled Action"
+msgstr "Ajouter une nouvelle action planifiée"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:33
+msgid "Add"
+msgstr "Ajouter"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:32
+msgctxt "Admin menu name"
+msgid "Scheduled Actions"
+msgstr "Actions planifiées"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:31
+msgid "Scheduled Action"
+msgstr "Action planifiée"
+
+#: thirds/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:20
+msgid "Scheduled actions are hooks triggered on a cetain date and time."
+msgstr "Les actions planifiées sont des crochets déclenchés à une certaine date et à une certaine heure."
+
+#. translators: %d refers to the total number of taskes completed
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:153
+msgid "%d scheduled task completed."
+msgid_plural "%d scheduled tasks completed."
+msgstr[0] "%d tâche planifiée terminée."
+msgstr[1] "%d tâches planifiées terminées."
+
+#. translators: %s refers to the exception error message
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:136
+msgid "There was an error running the action scheduler: %s"
+msgstr "Une erreur est survenue lors de l’exécution du planificateur d’actions : %s"
+
+#. translators: %d refers to the total number of batches executed
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:117
+msgid "%d batch executed."
+msgid_plural "%d batches executed."
+msgstr[0] "%d lot exécuté."
+msgstr[1] "%d lots exécutés."
+
+#. translators: %d refers to how many scheduled taks were found to run
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:100
+msgid "Found %d scheduled task"
+msgid_plural "Found %d scheduled tasks"
+msgstr[0] "Trouvé %d tâche planifiée"
+msgstr[1] "Trouvé %d tâches planifiées"
+
+#. translators: 1: action ID 2: exception message
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:170
+msgid "Error processing action %1$s: %2$s"
+msgstr "Action de traitement d’erreur %1$s : %2$s"
+
+#. translators: 1: action ID 2: hook name
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:155
+msgid "Completed processing action %1$s with hook: %2$s"
+msgstr "Action de traitement %1$s terminée avec le crochet : %2$s"
+
+#. translators: %s refers to the action ID
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:138
+msgid "Started processing action %s"
+msgstr "Traitement de l’action %s commencé"
+
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:113
+msgid "The claim has been lost. Aborting current batch."
+msgstr "La demande a été perdue. Abandon du lot actuel."
+
+#. translators: %d: amount of actions
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:93
+msgid "Running %d action"
+msgid_plural "Running %d actions"
+msgstr[0] "%d action en cours d’exécution"
+msgstr[1] "%d actions en cours d’exécution"
+
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:61
+msgid "There are too many concurrent batches."
+msgstr "Il y a trop de lots simultanés."
+
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:59
+msgid "There are too many concurrent batches, but the run is forced to continue."
+msgstr "Nombre de lots simultanés trop élevé, mais l’exécution est forcée de continuer."
+
+#. translators: %s php class name
+#: thirds/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:33
+#: thirds/action-scheduler/classes/WP_CLI/ProgressBar.php:47
+msgid "The %s class can only be run within WP CLI."
+msgstr "La classe %s peut uniquement être exécutée avec WP CLI."
+
+#. translators: 1: source action ID 2: source store class 3: destination action
+#. ID 4: destination store class
+#: thirds/action-scheduler/classes/migration/Runner.php:107
+msgid "Migrated action with ID %1$d in %2$s to ID %3$d in %4$s"
+msgstr "Migration de l’action avec l’ID %1$d dans %2$s vers l’ID %3$d dans %4$s"
+
+#. translators: %d: amount of actions
+#: thirds/action-scheduler/classes/migration/Runner.php:82
+msgid "Migrating %d action"
+msgid_plural "Migrating %d actions"
+msgstr[0] "Migration d’%d action"
+msgstr[1] "Migration de %d actions"
+
+#: thirds/action-scheduler/classes/migration/Controller.php:162
+msgid "Action Scheduler migration in progress. The list of scheduled actions may be incomplete."
+msgstr "La migration de l’outil de planification d’actions est en cours. La liste des actions planifiées peut ne pas être complète."
+
+#: thirds/action-scheduler/classes/migration/Config.php:118
+msgid "Destination logger must be configured before running a migration"
+msgstr "L’outil de journalisation de destination doit être configuré avant d’exécuter une migration"
+
+#: thirds/action-scheduler/classes/migration/Config.php:96
+msgid "Destination store must be configured before running a migration"
+msgstr "Le stockage de destination doit être configuré avant d’effectuer une migration"
+
+#: src/Actions/Admin/PrepareErrorHandler.php:80
+msgid "We have detected that it is impossible to write to your \"mu-plugins\" folder in your installation. In order for us to work properly, you need to change the rights to this folder. You can contact us at support for more information: support@wp-umbrella.com"
+msgstr "Nous avons détecté qu’il est impossible d’écrire dans le dossier \"mu-plugins\" de votre installation. Pour que notre extension puisse fonctionner correctement, vous devez modifier les droits de ce dossier. Vous pouvez contacter notre support pour plus d’informations : support@wp-umbrella.com"
+
+#: thirds/action-scheduler/classes/ActionScheduler_ListTable.php:133
+msgid "Cancel"
+msgstr "Annuler"
+
+#. Author URI of the plugin
+msgid "https://wp-umbrella.com/"
+msgstr "https://wp-umbrella.com/fr/"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: src/Services/WhiteLabel.php:29
+msgid "WP Umbrella"
+msgstr "WP Umbrella"
+
+#: src/Actions/Admin/PrepareErrorHandler.php:95
+msgid "An error was caused when WP Umbrella attempted to create a file in your directory mu-plugins. Please contact: support@wp-umbrella.com"
+msgstr "Une erreur est survenue quand WP Umbrella a tenté de créer un fichier dans votre répertoire mu-plugins. Veuillez contacter : support@wp-umbrella.com."
+
+#: src/Actions/Admin/WhiteLabel.php:95 templates/admin/pages/settings.php:16
+msgid "Settings"
+msgstr "Réglages"
+
+#. translators: 1 HTML Tag, 2 HTML Tag
+#: templates/admin/notices/no-configuration.php:12
+msgid "WP Umbrella is installed but not configured yet. %s Go to the settings.%s It only takes 1 minute! "
+msgstr "WP Umbrella est installé mais pas encore configuré. %s Allez dans les réglages.%s Cela ne prend qu’une minute ! "
+
+#. translators: 1 HTML Tag, 2 HTML Tag
+#: templates/admin/notices/no-curl.php:12
+msgid "WP Umbrella: You need to activate cURL. If you need help, just ask us directly at support@wp-umbrella.com"
+msgstr "WP Umbrella : vous devez activer cURL. Si vous avez besoin d’aide, demandez-nous directement via support@wp-umbrella.com"
+
+#. translators: 1 is a plugin name, 2 is WP Umbrella version, 3 is current php
+#. version.
+#: templates/admin/notices/php-min.php:12
+msgid "%1$s  requires PHP %2$s minimum, your website is actually running version %3$s."
+msgstr "%1$s nécessite PHP %2$s minimum, votre site utilise actuellement la version %3$s."

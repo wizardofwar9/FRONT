@@ -1,0 +1,24 @@
+/*
+Theme Name: Steph
+Theme URI: https://capitainewp.io
+Author: Clarté stéphane
+Author URI: https://dysign.fr
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+.menu {
+    position: fixed;
+    top: 0px;
+    color: aqua;
+}
+
+.admin-bar .menu {
+    
+	top: 32px; /* on prend en compte le décalage */
+}
+
+
+    
+

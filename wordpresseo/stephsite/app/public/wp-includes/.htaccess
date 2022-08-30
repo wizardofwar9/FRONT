@@ -1,0 +1,10 @@
+
+# BEGIN Page Speed Ninja
+# Les directives (lignes) entre « BEGIN Page Speed Ninja » et « END Page Speed Ninja » sont générées
+# dynamiquement, et doivent être modifiées uniquement via les filtres WordPress.
+# Toute modification des directives situées entre ces marqueurs sera surchargée.
+<IfModule mod_headers.c>
+	Header set Pragma "public"
+	Header set Cache-Control "public, max-age=604800"
+</IfModule>
+# END Page Speed Ninja
