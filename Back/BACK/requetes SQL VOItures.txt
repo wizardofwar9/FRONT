@@ -1,0 +1,17 @@
+SELECT voiture.Marques, vendeur.Nom, localisation.Ville
+FROM voiture
+INNER JOIN vendeur ON voiture.Id_Voiture=vendeur.Id_Vendeur
+INNER JOIN localisation ON voiture.Id_Voiture=localisation.Id_Localisation;
+[09:41]
+SELECT voiture.Marques, vendeur.Nom AS Nom_vendeur, localisation.Ville FROM voiture INNER JOIN vendeur ON voiture.Id_Voiture=vendeur.Id_Vendeur INNER JOIN localisation ON voiture.Id_Voiture=localisation.Id_Localisation; (modifié)
+SELECT voiture.couleur, localisation.Ville
+FROM voiture 
+INNER JOIN localisation ON voiture.Id_Voiture=localisation.Id_Localisation
+WHERE ville="vimy";
+
+
+SELECT photos.Nom_photo, appartenir.Id_Voiture, voiture.Marques 
+FROM photos
+INNER JOIN appartenir ON photos.Id_Photos=appartenir.Id_Voiture
+INNER JOIN voiture ON appartenir.Id_Voiture=voiture.Id_Voiture
+WHERE Marques="BMW";
