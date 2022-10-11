@@ -1,9 +1,9 @@
 <?php
 $bdd = new PDO('mysql:host=localhost;dbname=voitures;', 'root',  '');
-$allvoitures = $bdd->query('SELECT * FROM voiture ORDER BY id_Voiture DESC ');
+$allvoitures = $bdd->query('SELECT * FROM voiture ORDER BY Id_Voiture DESC ');
 if(isset($_GET['s']) AND !empty($_GET['s'])){
     $recherche = htmlspecialchars($_GET['s']);
-    $allvoitures = $bdd->query('SELECT Marques FROM voiture WHERE Marques LIKE "%'.$recherche.'%" ORDER BY id_Voiture DESC');
+    $allvoitures = $bdd->query('SELECT * FROM voiture WHERE concat(Marques,Carburant,modele) LIKE "%'.$recherche.'%" ORDER BY id_Voiture DESC');
 }
 
 
@@ -29,7 +29,14 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
         if($allvoitures->rowcount() > 0){
             while($Marque = $allvoitures->fetch()){
                ?>
-        <p><?=$Marque['Marques']; ?>
+        <p><?=
+        
+        "<table><tr><td>"
+        . $Marque['Marques'] . "</td>
+      <td>" . $Marque['Carburant'] . "</td>
+      <td>" . $Marque['modele'] . " </td> 
+      </tr></table>\n";
+      ?>
         </p>
 
         <?php
